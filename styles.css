@@ -2,7 +2,6 @@
 
 #title{
     background-color: #ff4c68;
-    /* background-color: black; */
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -16,7 +15,6 @@ nav a {
 }
 
 nav button{
-    /* border: 1px solid white !important; */
     color: white !important;
 }
 
@@ -46,15 +44,20 @@ nav button{
 }
 
 .dog-img{
-    width: 60%;
-    height: 100%;
+    width: 50%;
+    /* height: auto; */
+    /* height: 100%; */
     transform: rotate(30deg);
-    /* padding: 30px */
+    position: absolute;
+    right: 25%;
 }
 
 #features{
     padding-bottom:7% ;
-    padding-top: 7%;
+    padding-top: 10%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
 }
 
 .features i {
@@ -82,6 +85,9 @@ nav button{
 #testimonials{
     background-color: #EF8172;
     text-align: center;
+}
+
+.carousel-item{
     padding: 7% 15%;
 }
 
@@ -109,4 +115,65 @@ nav button{
     width: 15%;
     margin: 20px 15px ;
     margin-bottom: 50px;
+}
+
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    color: white;
+    padding: 7% 15%;
+}
+
+#cta h3{
+    margin-bottom: 4%;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-family: 'Montserrat' , 'sans-serif' ;
+}
+
+#pricing{
+    text-align: center;
+    padding:7% 10%;
+    padding-bottom: 5% ;
+}
+
+#pricing h2{
+    font-size: 2.5rem;
+    font-family: 'Montserrat' , 'sans-serif';
+    line-height: 1.5;
+}
+
+.card-header h3{
+    font-family: 'Montserrat' , 'sans-serif';
+}
+
+
+#footer {
+
+	text-align: center;
+	padding: 7% 15%;
+}
+
+.footer-icon {
+
+	color: black;
+	margin: 3% 3%;
+}
+
+.footer-icon:hover {
+	color: #ff4c68;
+}
+
+@media (max-width: 1028px) {
+
+	.dog-img {
+        width: 60%;
+		transform: rotate(0);
+		position: static;
+	}
+
+	#title {
+
+		text-align: center;
+	}
 }
